@@ -5,7 +5,6 @@ let input = document.getElementById("input"),
     deleteButton = document.getElementById("delete"),
     showButton = document.getElementById("show"),
     showAllButton = document.getElementById("show-all"),
-    deleteAllButton = document.getElementById("delete-all"),
     resultContent = document.querySelector(".result-content");
 
  // localStorge
@@ -19,7 +18,7 @@ let items = localStorage.getItem("items") ?
     deleteButton.onclick = deleteItem;
     showButton.onclick = showItem;
     showAllButton.onclick = showAllItems;
-    deleteAllButton.onclick = deleteAllItems;
+    showAllButton.onclick = showAllItems;
 
 // set functions
   // add function
@@ -103,8 +102,4 @@ function showAllItems() {
         // console.log("showAll", items);
      }
  
-function deleteAllItems() {
-  items = [];
-   localStorage.setItem("items", JSON.stringify(items));
-   resultContent.innerHTML = `clear all items`
- }
+console.log(Object.entries(localStorage))

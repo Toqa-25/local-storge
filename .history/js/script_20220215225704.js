@@ -104,7 +104,6 @@ function showAllItems() {
      }
  
 function deleteAllItems() {
-  items = [];
+  localStorage.removeItem("items");
    localStorage.setItem("items", JSON.stringify(items));
-   resultContent.innerHTML = `clear all items`
  }

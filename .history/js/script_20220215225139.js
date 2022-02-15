@@ -5,7 +5,6 @@ let input = document.getElementById("input"),
     deleteButton = document.getElementById("delete"),
     showButton = document.getElementById("show"),
     showAllButton = document.getElementById("show-all"),
-    deleteAllButton = document.getElementById("delete-all"),
     resultContent = document.querySelector(".result-content");
 
  // localStorge
@@ -103,8 +102,6 @@ function showAllItems() {
         // console.log("showAll", items);
      }
  
-function deleteAllItems() {
-  items = [];
-   localStorage.setItem("items", JSON.stringify(items));
-   resultContent.innerHTML = `clear all items`
+ function deleteAllItems(){
+   
  }
