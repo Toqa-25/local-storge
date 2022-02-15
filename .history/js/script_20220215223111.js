@@ -95,7 +95,7 @@ function showAllItems() {
      }
          else {
              
-        resultContent.innerHTML = `No items to show`;    
+        resultContent.innerHTML = `Not found  <span>${input.value.trim()} </span> item  in localStorge`;    
          }
         // console.log("showAll", items);
      }
