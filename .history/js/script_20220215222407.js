@@ -45,8 +45,8 @@ function deleteItem() {
           }
         });
        }
-       else {
-         resultContent.innerHTML = `Not found <span>${input.value.trim()} </span> item  in localStorge
+       else{
+         
        }
       input.value = null;
     }
