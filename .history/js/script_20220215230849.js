@@ -107,7 +107,8 @@ function deleteAllItems() {
     if (items.length >= 1) {   
       items = [];
        localStorage.setItem("items", JSON.stringify(items));
-       resultContent.innerHTML = `Clear all items`;
+       resultContent.innerHTML = `Clear all items`
+      });
     } else {
       resultContent.innerHTML = `No items to show`;
     }

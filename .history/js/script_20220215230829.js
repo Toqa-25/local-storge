@@ -104,11 +104,15 @@ function showAllItems() {
      }
  
 function deleteAllItems() {
-    if (items.length >= 1) {   
-      items = [];
-       localStorage.setItem("items", JSON.stringify(items));
-       resultContent.innerHTML = `Clear all items`;
+    if (items.length >= 1) {
+      resultContent.innerHTML = "";
+      items.map((item, index) => {
+        resultContent.innerHTML += `<h4> ${index + 1} - ${item} </h4>`;
+      });
     } else {
       resultContent.innerHTML = `No items to show`;
     }
+  items = [];
+   localStorage.setItem("items", JSON.stringify(items));
+   resultContent.innerHTML = `Clear all items`
  }
