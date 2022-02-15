@@ -36,18 +36,21 @@ let items = localStorage.getItem("items") ?
 function deleteItem() {
            resultContent.innerHTML = "";
     if (input.value != "" && input.value != null) {
-      if (items.includes(input.value.trim())) {      
-        items.map((item, index) => {
-          if (item == input.value.trim()) {
-            items.splice(index, 1);
-            localStorage.setItem("items", JSON.stringify(items));
-            resultContent.innerHTML = `You delete <span>${input.value.trim()} </span> from localStorge`;
-          }
-        });
+       if (!items.includes(input.value.trim())){
+         
        }
+      items.map((item, index) => {
+        if (item == input.value.trim()) {
+          items.splice(index, 1);
+          localStorage.setItem("items", JSON.stringify(items));
+          resultContent.innerHTML = `You delete <span>${input.value.trim()} </span> from localStorge`;
+        }
+      });
+     else {
+        resultContent.innerHTML = `Not found <span>${input.value.trim()} </span> item  in localStorge`;
+      }
       input.value = null;
-    }
-    else {
+    } else {
       swal("Enter the Item Name");
     }
  }

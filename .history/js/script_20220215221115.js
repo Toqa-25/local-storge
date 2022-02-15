@@ -36,7 +36,7 @@ let items = localStorage.getItem("items") ?
 function deleteItem() {
            resultContent.innerHTML = "";
     if (input.value != "" && input.value != null) {
-      if (items.includes(input.value.trim())) {      
+      if (!items.includes(input.value.trim())) {      
         items.map((item, index) => {
           if (item == input.value.trim()) {
             items.splice(index, 1);
@@ -45,6 +45,9 @@ function deleteItem() {
           }
         });
        }
+    //  else {
+    //     resultContent.innerHTML = `Not found <span>${input.value.trim()} </span> item  in localStorge`;
+    //   }
       input.value = null;
     }
     else {
