@@ -109,6 +109,6 @@ function deleteAllItems() {
        localStorage.setItem("items", JSON.stringify(items));
        resultContent.innerHTML = `delete all items`;
     } else {
-      resultContent.innerHTML = `No items to delete`;
+      resultContent.innerHTML = `No items to delet`;
     }
  }
