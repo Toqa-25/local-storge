@@ -43,7 +43,7 @@ function deleteItem() {
           if (item == input.value.trim()) {
             items.splice(index, 1);
             localStorage.setItem("items", JSON.stringify(items));
-            resultContent.innerHTML = ` deleted <span>${input.value.trim()} </span> from localStorge`;
+            resultContent.innerHTML = `You delete <span>${input.value.trim()} </span> from localStorge`;
           }
         });
        }
