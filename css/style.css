@@ -35,11 +35,11 @@ section {
     justify-content: center;
     align-items: center;
 }
-@media (min-width : 992px){
+/* @media (min-width : 992px){
     section {
        height: calc(100vh - 90px);
     }
-}
+} */
 .local-header {
     color: var(--main-color);
     font-size: 50px;
