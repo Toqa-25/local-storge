@@ -95,7 +95,8 @@ function showAllItems() {
              
          })
      }
-         else {             
+         else {
+             
         resultContent.innerHTML = `No items to show`;    
          }
         // console.log("showAll", items);

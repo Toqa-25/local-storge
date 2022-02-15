@@ -58,19 +58,18 @@ function deleteItem() {
   // check function
 function checkItem() {   //f
   resultContent.innerHTML = "";
-  if (input.value != "" && input.value != null) {   // if 1
+  if (input.value != "" && input.value != null) {   //1
     if (items.includes(input.value.trim())) {
       resultContent.innerHTML = `The <span>${input.value.trim()} </span> item is exisit in localStorge`;
     } else {
       resultContent.innerHTML = `Not found <span>${input.value.trim()} </span> item  in localStorge`;
     }
     input.value = null;
-  } //if 1
-  else {
+  } else {
     swal("Enter the Item Name");
   }
-} //f
-  
+}
+ }   
   // show function
 function showItem() {
     resultContent.innerHTML = "";
@@ -95,7 +94,8 @@ function showAllItems() {
              
          })
      }
-         else {             
+         else {
+             
         resultContent.innerHTML = `No items to show`;    
          }
         // console.log("showAll", items);

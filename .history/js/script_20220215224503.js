@@ -70,7 +70,7 @@ function checkItem() {   //f
     swal("Enter the Item Name");
   }
 } //f
-  
+ }   
   // show function
 function showItem() {
     resultContent.innerHTML = "";
@@ -95,7 +95,8 @@ function showAllItems() {
              
          })
      }
-         else {             
+         else {
+             
         resultContent.innerHTML = `No items to show`;    
          }
         // console.log("showAll", items);
