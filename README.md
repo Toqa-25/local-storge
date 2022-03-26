@@ -1,14 +1,12 @@
 
     localStorge App 
  
-localStorge App allow  you :
- - add item  if you enter item name and  clicked add button.
- - check item  if you enter item name and  clicked add check.
- - delete item  if  it exsist  and you enter item name and  clicked add button.
- - show item  if it exsist  and you enter item name and  clicked show button.
- this App code with HTML & CSS & javaSript
- 
- you can check it in this link:
- https://toqa-25.github.io/local-storge/
+local storage App allows you :
+add an item if you enter the item name and click add button.
+check the item if you enter the item name and clicked add a check.
+delete an item if it exists and you enter the item name and click add button.
+show item if it exists and you enter the item name and clicked the show button. this App code with HTML & CSS & javascript
+you can check it at this link:
+https://toqa-25.github.io/local-storge/
 
 
